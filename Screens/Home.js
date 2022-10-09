@@ -214,6 +214,8 @@ export default function Home({navigation}) {
           bgImage={require("../assets/meat.jpeg")}
           title="Meat"
           price="#12,000"
+          oyaMove={() =>navigation.navigate("ApiExample")}
+
          
         />
 

@@ -5,11 +5,16 @@ import Home from "./Screens/Home";
 import Product from "./Screens/Product";
 import Details from "./Screens/Details";
 import Detailschicken from "./Screens/Detailschicken"
+import ApiExample from "./Screens/ApiExample";
+import MoviesDetails from "./Screens/MoviesDetails";
+
 
 
 const Stack = createNativeStackNavigator();
 
 const App = () => {
+
+
   return (
     <NavigationContainer>
       <Stack.Navigator
@@ -22,10 +27,16 @@ const App = () => {
         <Stack.Screen component={Product} name="Product" />
 
         <Stack.Screen component={Details} name="Details" />
-        <Stack.Screen component={Detailschicken} name="Details" />
+        <Stack.Screen component={Detailschicken} name="Detailschicken" />
+        <Stack.Screen component={ApiExample} name="ApiExample" />
+        <Stack.Screen component={MoviesDetails} name="MoviesDetails" />
+      
+        
+
       </Stack.Navigator>
     </NavigationContainer>
   );
 };
 
 export default App;
+
